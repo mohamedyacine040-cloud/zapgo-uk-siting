@@ -1,1 +1,23 @@
+{
+  "name": "Zapgo UK EV Charger Siting",
+  "description": "Dashboard for siting EV chargers across the UK, focused on local shops and community venues.",
+  "keywords": ["ev", "charging", "uk", "fastapi", "react", "local shops"],
+  "env": {
+    "MIN_BAYS": {
+      "description": "Minimum parking bays filter",
+      "value": "6"
+    },
+    "REGION_SCOPE": {
+      "description": "Geographic scope",
+      "value": "UK"
+    }
+  },
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+    { "url": "heroku/python" },
+    { "url": "heroku/nodejs" }
+  ]
+}
 
